@@ -6,4 +6,4 @@ Maxime Vono, Nicolas Dobigeon, Pierre Chainais, [Split-and-augmented Gibbs sampl
 Copyright
 -------
 
-Copyright (c) 2018 Maxime Vono.
+Copyright (c) 2019 Maxime Vono.
