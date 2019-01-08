@@ -63,7 +63,7 @@ for t = 1:(N_MC-1)
     % 3. Sample d from p(u|x,z)
     x = reshape(X_MC(:,:,t+1),[N^2,1]);
     z = reshape(Z_MC(:,:,t+1),[N^2,1]);
-    moy = (alpha^2 / ((rho^2) + alpha^2)) * (z-x);
+    moy = (alpha^2 / (rho^2 + alpha^2)) * (z-x);
     sig = repmat((alpha^2 * rho^2) / (alpha^2 + rho^2),1,N^2);
     mu = mvnrnd(moy',sig)';
     U_MC(:,:,t+1) = reshape(mu,[N,N]);
